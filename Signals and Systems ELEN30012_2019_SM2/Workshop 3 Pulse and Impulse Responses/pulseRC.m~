@@ -1,0 +1,10 @@
+clear all
+close all
+clc
+
+%%Q4
+t=0:0.01:1;
+y=(1-exp(-10*t))*(t>=0&t<=0.5)+exp(-10*(t-0.5))*(t>0.5);
+plot(t,y,'r','linewidth',2)
+axis([0 10 0 2.1])
+grid on
